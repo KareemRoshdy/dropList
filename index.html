@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#" data-text="home">home</a>
+        <a href="#" data-text="about">about</a>
+        <a href="#" data-text="gallery">gallery</a>
+        <a href="#" data-text="portfolio">portfolio</a>
+        <a href="#" data-text="blogs">blogs</a>
+        <a href="#" data-text="contact">contact</a>
+    </nav>
+</header>
+
+
+
+<script>
+
+    document.querySelector('#menu-btn').onclick = () =>{
+        document.querySelector('#menu-btn').classList.toggle('fa-times');
+        document.querySelector('.navbar').classList.toggle('active');
+    }
+
+
+</script>
+</body>
+</html>
